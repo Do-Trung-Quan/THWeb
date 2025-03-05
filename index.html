@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="./pics/LoginBG.png" alt="Illustration">
+        </div>
+        <div class="right-section">
+            <h2>LOGIN</h2>
+            <form id="loginForm">
+                <label for="fullname">Họ và tên:</label>
+                <div class="input-group">
+                    <span class="icon">👤</span>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <label for="dob">Ngày sinh:</label>
+                <div class="input-group">
+                    <span class="icon">📅</span>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <label for="studentId">Mã sinh viên:</label>
+                <div class="input-group">
+                    <span class="icon">🆔</span>
+                    <input type="text" id="studentId" name="studentId" required>
+                </div>
+
+                <label for="classId">Mã lớp:</label>
+                <div class="input-group">
+                    <span class="icon">🏫</span>
+                    <input type="text" id="classId" name="classId" required>
+                </div>
+
+                <button type="submit" class="login-btn">Đăng nhập</button>
+            </form>
+        </div>
+    </div>
+    <script src="./JS/Login.js"></script>
+</body>
+</html>

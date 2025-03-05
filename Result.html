@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết Quả Bài Thi</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Kết Quả Bài Thi</h1>
+        <p id="score-display"></p>
+        <button onclick="window.location.href='Main.html'">Làm lại bài</button>
+    </div>
+
+    <script>
+        // Lấy điểm số từ URL và hiển thị lên trang
+        const params = new URLSearchParams(window.location.search);
+        const score = params.get("score");
+        const totalQuestions = 40;
+        document.getElementById("score-display").innerHTML = `Bạn đã đúng ${score}/${totalQuestions} câu.`;
+    </script>
+
+    <style>
+        .result-container {
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            background-color: orange;
+            padding: 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>

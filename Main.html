@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Thi Trắc Nghiệm</title>
+    <link rel="stylesheet" href="./css/Main.css">
+</head>
+<body>
+
+    <h1>Tên web thi trắc nghiệm</h1>
+
+    <div class="container">
+        <!-- Thông tin bài thi -->
+        <div class="info-box">
+            <p><strong>Môn thi:</strong> Lorem ipsum</p>
+            <p><strong>Thời gian còn lại:</strong> lorem</p>
+            <button id="submitBtn">NỘP BÀI</button>
+        </div>
+
+        <!-- Thông tin thí sinh -->
+        <div class="info-box candidate-info">
+            <h3>Thông tin thí sinh</h3>
+            <p><strong>Họ và tên:</strong> <span id="studentName"></span></p>
+            <p><strong>Ngày sinh:</strong> <span id="studentDob"></span></p>
+            <p><strong>Mã sinh viên:</strong> <span id="studentId"></span></p>
+            <p><strong>Mã lớp:</strong> <span id="studentClass"></span></p>
+        </div>
+
+        <div class="hint-info">
+            <h2>Cái nào không biết thì mình chọn toàn A</h2>
+        </div>
+
+        <!-- Danh sách câu hỏi -->
+        <div class="question-container">
+            <!-- Nhóm 1: Đúng/Sai -->
+            <div class="question-group" id="q1">
+                <h3>Câu 1:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q1" value="true"> True</label>
+                <label><input type="radio" name="q1" value="false"> False</label>
+            </div>
+
+            <div class="question-group" id="q2">
+                <h3>Câu 2:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q2" value="true"> True</label>
+                <label><input type="radio" name="q2" value="false"> False</label>
+            </div>
+            
+            <div class="question-group" id="q3">
+                <h3>Câu 3:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q3" value="true"> True</label>
+                <label><input type="radio" name="q3" value="false"> False</label>
+            </div>
+            <div class="question-group" id="q4">
+                <h3>Câu 4:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q4" value="true"> True</label>
+                <label><input type="radio" name="q4" value="false"> False</label>
+            </div>
+            <div class="question-group" id="q5">
+                <h3>Câu 5:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q5" value="true"> True</label>
+                <label><input type="radio" name="q5" value="false"> False</label>
+            </div>
+            <div class="question-group" id="q6">
+                <h3>Câu 6:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q6" value="true"> True</label>
+                <label><input type="radio" name="q6" value="false"> False</label>
+            </div>
+            <div class="question-group" id="q7">
+                <h3>Câu 7:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q7" value="true"> True</label>
+                <label><input type="radio" name="q7" value="false"> False</label>
+            </div>
+            <div class="question-group" id="q8">
+                <h3>Câu 8:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q8" value="true"> True</label>
+                <label><input type="radio" name="q8" value="false"> False</label>
+            </div>
+            <div class="question-group" id="q9">
+                <h3>Câu 9:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q9" value="true"> True</label>
+                <label><input type="radio" name="q9" value="false"> False</label>
+            </div>
+            <div class="question-group" id="q10">
+                <h3>Câu 10:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q10" value="true"> True</label>
+                <label><input type="radio" name="q10" value="false"> False</label>
+            </div>
+
+
+            <!-- Nhóm 2: Chọn 1 đáp án -->
+            <div class="question-group" id="q11">
+                <h3>câu 11:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q11" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q11" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q11" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q11" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q12">
+                <h3>câu 12:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q12" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q12" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q12" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q12" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q13">
+                <h3>câu 13:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q13" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q13" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q13" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q13" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q14">
+                <h3>câu 14:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q14" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q14" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q14" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q14" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q15">
+                <h3>câu 15:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q15" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q15" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q15" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q15" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q16">
+                <h3>câu 16:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q16" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q16" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q16" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q16" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q17">
+                <h3>câu 17:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q17" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q17" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q17" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q17" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q18">
+                <h3>câu 18:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q18" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q18" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q18" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q18" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q19">
+                <h3>câu 19:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q19" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q19" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q19" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q19" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q20">
+                <h3>câu 20:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="radio" name="q20" value="A"> Lorem ipsum A</label>
+                <label><input type="radio" name="q20" value="B"> Lorem ipsum B</label>
+                <label><input type="radio" name="q20" value="C"> Lorem ipsum C</label>
+                <label><input type="radio" name="q20" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <!-- Nhóm 3: Chọn nhiều đáp án -->
+            <div class="question-group" id="q21">
+                <h3>câu 21:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q21" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q21" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q21" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q21" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q22">
+                <h3>câu 22:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q22" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q22" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q22" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q22" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q23">
+                <h3>câu 23:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q23" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q23" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q23" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q23" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q24">
+                <h3>câu 24:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q24" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q24" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q24" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q24" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q25">
+                <h3>câu 25:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q25" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q25" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q25" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q25" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q26">
+                <h3>câu 26:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q26" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q26" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q26" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q26" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q27">
+                <h3>câu 27:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q27" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q27" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q27" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q27" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q28">
+                <h3>câu 28:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q28" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q28" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q28" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q28" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q29">
+                <h3>câu 29:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q29" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q29" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q29" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q29" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <div class="question-group" id="q30">
+                <h3>câu 30:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ?</p>
+                <label><input type="checkbox" name="q30" value="A"> Lorem ipsum A</label>
+                <label><input type="checkbox" name="q30" value="B"> Lorem ipsum B</label>
+                <label><input type="checkbox" name="q30" value="C"> Lorem ipsum C</label>
+                <label><input type="checkbox" name="q30" value="D"> Lorem ipsum D</label>
+            </div>
+
+            <!-- Nhóm 4: Tự luận -->
+            <div class="question-group" id="q31">
+                <h3>câu 31:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q31" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q32">
+                <h3>câu 32:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q32" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q33">
+                <h3>câu 33:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q33" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q34">
+                <h3>câu 34:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q34" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q35">
+                <h3>câu 35:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q35" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q36">
+                <h3>câu 36:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q36" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q37">
+                <h3>câu 37:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q37" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q38">
+                <h3>câu 38:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q38" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q39">
+                <h3>câu 39:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q39" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+
+            <div class="question-group" id="q40">
+                <h3>câu 40:</h3>
+                <p>Web này xứng đáng 10 điểm ko?</p>
+                <textarea name="q40" rows="4" cols="50" placeholder="Câu trả lời..."></textarea>
+            </div>
+            
+        </div>
+
+        <!-- Mục lục câu hỏi -->
+        <div class="question-list">
+            <h3>Mục lục câu hỏi:</h3>
+            <div class="grid">
+                <button class="question-link" data-question="q1">01</button>
+                <button class="question-link" data-question="q2">02</button>
+                <button class="question-link" data-question="q3">03</button>
+                <button class="question-link" data-question="q4">04</button>
+                <button class="question-link" data-question="q5">05</button>
+                <button class="question-link" data-question="q6">06</button>
+                <button class="question-link" data-question="q7">07</button>
+                <button class="question-link" data-question="q8">08</button>
+                <button class="question-link" data-question="q9">09</button>
+                <button class="question-link" data-question="q10">10</button>
+
+                <button class="question-link" data-question="q11">11</button>
+                <button class="question-link" data-question="q12">12</button>
+                <button class="question-link" data-question="q13">13</button>
+                <button class="question-link" data-question="q14">14</button>
+                <button class="question-link" data-question="q15">15</button>
+                <button class="question-link" data-question="q16">16</button>
+                <button class="question-link" data-question="q17">17</button>
+                <button class="question-link" data-question="q18">18</button>
+                <button class="question-link" data-question="q19">19</button>
+                <button class="question-link" data-question="q20">20</button>
+
+                <button class="question-link" data-question="q21">21</button>
+                <button class="question-link" data-question="q22">22</button>
+                <button class="question-link" data-question="q23">23</button>
+                <button class="question-link" data-question="q24">24</button>
+                <button class="question-link" data-question="q25">25</button>
+                <button class="question-link" data-question="q26">26</button>
+                <button class="question-link" data-question="q27">27</button>
+                <button class="question-link" data-question="q28">28</button>
+                <button class="question-link" data-question="q29">29</button>
+                <button class="question-link" data-question="q30">30</button>
+
+                <button class="question-link" data-question="q31">31</button>
+                <button class="question-link" data-question="q32">32</button>
+                <button class="question-link" data-question="q33">33</button>
+                <button class="question-link" data-question="q34">34</button>
+                <button class="question-link" data-question="q35">35</button>
+                <button class="question-link" data-question="q36">36</button>
+                <button class="question-link" data-question="q37">37</button>
+                <button class="question-link" data-question="q38">38</button>
+                <button class="question-link" data-question="q39">39</button>
+                <button class="question-link" data-question="q40">40</button>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Kết quả -->
+    <div id="result" class="hidden"></div>
+
+    <script src="./JS/Main.js"></script>
+
+</body>
+</html>
